@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="flex-cont">
+      <div>
+        <p id="pForTank">Tank</p>
+        <p id="countBattle"></p>
+        <button onclick="randomIntMy(),countTankBattleRandom()" class="click">
+          Click
+        </button>
+        <button class="off" onclick="offBattle()">off battle</button>
+        <button class="off off-on" onclick="onBattle()">on battle</button>
+      </div>
+    </div>
+
+    <script>
+      function randomIntMy() {
+        let arr = ["is3", "53tp", "isu-15", "caernarvon"];
+        const randomInt = Math.floor(Math.random() * 4);
+        document.getElementById("pForTank").innerHTML = arr[randomInt];
+      }
+      function countTankBattleRandom() {
+        const randomInt = Math.floor(Math.random() * 6) + 5;
+        document.getElementById("countBattle").innerHTML = "Battle :" + randomInt;
+      }
+      function offBattle() {
+        document.getElementsByClassName("click").onclick = randomIntMy();
+        document.getElementById("countBattle").style = "visibility: hidden";
+      }
+      function onBattle() {
+        document.getElementById("countBattle").style = "visibility:visible";
+      }
+    </script>
+  </body>
+</html>

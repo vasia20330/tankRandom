@@ -1,0 +1,55 @@
+.flex-cont{
+    display: flex;
+    margin:   0;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    >div{
+        min-width: 200px;
+       >p{
+        color: GreenYellow;
+        font-size: 4em;
+        text-align: center;
+        
+       }
+       #countBattle{
+         font-size: 2em;
+         padding: 0;
+         margin-top: 10px;
+       }
+       #pForTank{
+        margin: 0;
+       }
+       button{
+        cursor: pointer;
+       }
+       button.click{
+        margin: 0 auto;
+        display: block;
+        border-radius: 10px;
+        padding: 20px;
+        font-size: 2em;
+        border: none;
+        background-color: Maroon;
+       }
+       .off{
+        margin: 0 auto;
+        position: relative;
+        top: 150px;
+        display: block;
+        border-radius: 10px;
+        padding: 20px;
+        font-size: 2em;
+        border: none;
+        background-color: LightBlue;
+       }
+       .off-on{
+        position: relative;
+        top: -500px;
+        background-color: MediumSlateBlue;
+       }
+    }
+}
+body{
+    background-color: grey;
+}
